@@ -107,7 +107,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="oiw-hH-6HZ"/>
                                 </constraints>
-                                <state key="normal" title="Get Celsius"/>
+                                <state key="normal" title="Show Celsius"/>
                                 <connections>
                                     <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vkV-fd-hWP"/>
                                 </connections>
@@ -121,7 +121,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="10001" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="w8F-8O-4YH">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="10001" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="w8F-8O-4YH">
                                 <rect key="frame" x="104" y="90" width="253" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="Fgy-na-lXF"/>

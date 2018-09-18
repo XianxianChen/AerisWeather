@@ -39,10 +39,10 @@ class ViewController: UIViewController {
     
     @IBAction func buttonPressed(_ sender: UIButton) {
          self.collectionView.reloadData()
-        if sender.currentTitle == "Get Celsius" {
-            sender.setTitle("Get Fahrenheit", for: .normal)
+        if sender.currentTitle == "Show Celsius" {
+            sender.setTitle("Show Fahrenheit", for: .normal)
         } else {
-            sender.setTitle("Get Celsius", for: .normal)
+            sender.setTitle("Show Celsius", for: .normal)
         }
     }
     func loadWeathers(from zipCode: String) {
@@ -93,7 +93,7 @@ extension ViewController:  UICollectionViewDataSource {
         let maxTempC = weathers[indexPath.row].maxTempC
         let minTempC = weathers[indexPath.row].minTempC
         
-       if self.button.currentTitle == "Get Celsius" {
+       if self.button.currentTitle == "Show Celsius" {
         cell.maxLabel.text = "High: \(highTemp)℉"
         cell.lowLabel.text = "Low: \(lowTemp)℉"
        } else {
@@ -109,7 +109,9 @@ extension ViewController:  UICollectionViewDataSource {
     
 }
 extension ViewController: UICollectionViewDelegateFlowLayout {
-    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize.init(width: collectionView.bounds.width / CGFloat(1.5) , height: collectionView.bounds.height)
+    }
     
 }
 
