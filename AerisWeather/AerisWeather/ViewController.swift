@@ -34,7 +34,9 @@ class ViewController: UIViewController {
         self.textField.delegate = self
         self.collectionView.delegate = self
         self.collectionView.dataSource = self
-    
+        if let savedZipcode = UserDefaults.standard.value(forKeyPath: "zipCode") as? String {
+            self.zipCode = savedZipcode
+        }
     }
     
     @IBAction func buttonPressed(_ sender: UIButton) {
