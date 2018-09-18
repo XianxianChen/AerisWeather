@@ -14,6 +14,10 @@
 		8110B33D21516C03002DDF71 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8110B33B21516C03002DDF71 /* LaunchScreen.storyboard */; };
 		8110B34821516C03002DDF71 /* AerisWeatherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8110B34721516C03002DDF71 /* AerisWeatherTests.swift */; };
 		8110B35321516C03002DDF71 /* AerisWeatherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8110B35221516C03002DDF71 /* AerisWeatherUITests.swift */; };
+		8110B3622151701C002DDF71 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8110B3612151701C002DDF71 /* CollectionViewCell.swift */; };
+		8110B364215173B3002DDF71 /* WeatherInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8110B363215173B3002DDF71 /* WeatherInfo.swift */; };
+		8110B366215174B0002DDF71 /* NetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8110B365215174B0002DDF71 /* NetworkHelper.swift */; };
+		8110B36A215178CD002DDF71 /* WeatherAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8110B369215178CD002DDF71 /* WeatherAPIClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,10 @@
 		8110B34E21516C03002DDF71 /* AerisWeatherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AerisWeatherUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8110B35221516C03002DDF71 /* AerisWeatherUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AerisWeatherUITests.swift; sourceTree = "<group>"; };
 		8110B35421516C03002DDF71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8110B3612151701C002DDF71 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		8110B363215173B3002DDF71 /* WeatherInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherInfo.swift; sourceTree = "<group>"; };
+		8110B365215174B0002DDF71 /* NetworkHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHelper.swift; sourceTree = "<group>"; };
+		8110B369215178CD002DDF71 /* WeatherAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherAPIClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,11 +105,12 @@
 		8110B33121516C01002DDF71 /* AerisWeather */ = {
 			isa = PBXGroup;
 			children = (
-				8110B33221516C01002DDF71 /* AppDelegate.swift */,
+				8110B36021516EAC002DDF71 /* Supporting Files */,
 				8110B33421516C01002DDF71 /* ViewController.swift */,
 				8110B33621516C01002DDF71 /* Main.storyboard */,
+				8110B3612151701C002DDF71 /* CollectionViewCell.swift */,
+				8110B36B21517915002DDF71 /* Models */,
 				8110B33921516C03002DDF71 /* Assets.xcassets */,
-				8110B33B21516C03002DDF71 /* LaunchScreen.storyboard */,
 				8110B33E21516C03002DDF71 /* Info.plist */,
 			);
 			path = AerisWeather;
@@ -123,6 +132,25 @@
 				8110B35421516C03002DDF71 /* Info.plist */,
 			);
 			path = AerisWeatherUITests;
+			sourceTree = "<group>";
+		};
+		8110B36021516EAC002DDF71 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8110B33221516C01002DDF71 /* AppDelegate.swift */,
+				8110B33B21516C03002DDF71 /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8110B36B21517915002DDF71 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8110B363215173B3002DDF71 /* WeatherInfo.swift */,
+				8110B365215174B0002DDF71 /* NetworkHelper.swift */,
+				8110B369215178CD002DDF71 /* WeatherAPIClient.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,8 +284,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8110B36A215178CD002DDF71 /* WeatherAPIClient.swift in Sources */,
+				8110B364215173B3002DDF71 /* WeatherInfo.swift in Sources */,
 				8110B33521516C01002DDF71 /* ViewController.swift in Sources */,
+				8110B366215174B0002DDF71 /* NetworkHelper.swift in Sources */,
 				8110B33321516C01002DDF71 /* AppDelegate.swift in Sources */,
+				8110B3622151701C002DDF71 /* CollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
